@@ -1,0 +1,32 @@
+.sendMessage{
+    border:none;
+    width: 300px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    margin: 10px;
+    margin-top:0;
+    padding-top:0;
+    }
+    
+    
+.placeHolder{
+    position: relative;
+    font-size:0px;
+}
+    
+label{
+    top: -13px;
+    position:absolute;
+    margin-left:10px;
+    margin-top:5px;
+    font-size:12px;
+    font-family:  "Times New Roman", monospace;
+    font-style:italic;
+    transition-duration: 0.6s;
+    user-select:none;
+}
+    
+    
+input:focus ~ .placeHolder label{
+    opacity:0;
+}

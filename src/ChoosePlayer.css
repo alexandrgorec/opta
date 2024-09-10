@@ -1,0 +1,47 @@
+.hero{
+    padding:0;
+    border-radius:35%;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid black;
+    text-align: center;
+    transition-property: transform;
+    transition-duration: 0.3s
+    }
+    
+.hero:hover{
+    transform: scale(1.2);
+    border: 1px solid green;
+    cursor:pointer;
+}
+
+.hero p{
+    padding-top:15px;
+    user-select:none;
+}
+
+  
+.choosePlayer{
+    position:relative;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:100px;
+    width: 250px;
+    height: 125px;
+    padding:25px;
+    padding-bottom:0;
+    display:flex;
+    border: 1px solid navy;
+    gap: 35px;
+    
+}
+    
+.choosePlayer::before{
+    position:absolute;
+    content:"Выберите персонажа:";
+    font-size: 24px;
+    font-family:"Times New Roman", "Courier New", "sans-serif";
+    top: -35px;
+    left: 35px;
+}
