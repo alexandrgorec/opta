@@ -1,0 +1,18 @@
+.tooltip {
+    position: absolute;
+    display: none;
+    border: 1px solid orange;
+    background-color: blanchedalmond;
+    user-select: none;
+    font-size: 16px;
+    left: 100px;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.tooltipImg {
+    width: 200px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}

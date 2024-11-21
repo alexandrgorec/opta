@@ -1,0 +1,33 @@
+.gameProcess {
+    padding: 15px;
+    padding-top: 75px;
+    padding-left: 40px;
+    font-size: 12px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+    width: auto;
+    position: relative;
+    background-color: rgba(240, 255, 255, 0.084);
+    box-sizing: border-box;
+}
+
+.stepEnemy,
+.stepPlayer {
+    position: absolute;
+    font-weight: 700;
+    left: 40%;
+    top: 15px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(128, 23, 0);
+    user-select: none;
+    background-color: rgba(255, 235, 205, 0);
+}
+
+.stepPlayer {
+    color: green;
+}
+

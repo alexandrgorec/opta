@@ -1,18 +1,18 @@
 import React from 'react';
-import './App.css';
 import ChoosePlayer from './ChoosePlayer';
-import Chat from './Chat';
+import AppWrapper from './AppWrapper';
+import "./App.css";
 
-
-function App({ws}) {
-	ws.onopen =  () => {};
-	ws.onclose = () => {alert("close")};
-	const [playerId,setPlayerId] = React.useState(null);
-	let content = playerId === null 
-	? <ChoosePlayer setPlayerId={setPlayerId}/> 
-	: <Chat player={playerId} ws={ws}/>;
+function App({ ws, changeState, imgServer }) {
+	const [playerId, setPlayerId] = React.useState(null);
+	let content = playerId === null
+		? <ChoosePlayer setPlayerId={setPlayerId} ws={ws}/>
+		: <AppWrapper playerId={playerId} ws={ws} changeState={changeState} imgServer={imgServer}/>;
 	return (
-		content
-	);}
+		<div style={{ backgroundImage: `url(${imgServer}?img=background.png)` }} className="app">
+		{content}
+		</div>
+	);
+}
 
 export default App;

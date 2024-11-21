@@ -23,10 +23,10 @@
 
   
 .choosePlayer{
+    top: 35%;
     position:relative;
     margin-left:auto;
     margin-right: auto;
-    margin-top:100px;
     width: 250px;
     height: 125px;
     padding:25px;

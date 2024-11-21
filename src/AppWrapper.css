@@ -1,0 +1,34 @@
+.appWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.endGame{
+    position: absolute;
+    width: 60%;
+    font-size: 36px;
+    font-weight: 700;
+    top: 40%;
+    text-align: center;
+    z-index: 999;
+    height: 100px;
+    padding-top: 50px;
+    left: 20%;
+    border-radius: 50%;
+}
+
+.winner{
+    background-color: rgb(22, 202, 6);
+}
+
+.winner::after{
+    content: "ВЫ ПОБЕДИЛИ";
+}
+
+.looser{
+    background-color: rgb(202, 35, 6);
+}
+
+.looser::after{
+    content: "НУ ТЫ И ЛОШАРА";
+}

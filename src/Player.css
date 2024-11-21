@@ -1,0 +1,104 @@
+.noDisplay {
+    display: none;
+}
+
+.healthPlayerArmor{
+    box-sizing: border-box;
+    position: relative;
+}
+
+.health,.armor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 25px;
+    height: 125px;
+    font-weight: 700;
+}
+
+.health{
+    float: left;
+    background-color: rgba(255, 0, 0, 0.803);
+}
+
+.armor{
+    float:right;
+    background-color: rgba(108, 154, 191, 0.76);
+}
+
+.playerClass{
+    display: flex;
+    position: relative;
+    width: 103px;
+    height: 125px;
+    border: 0px;
+    background-color: blanchedalmond;
+    user-select:none;
+    transition-duration: 0.35s;
+    background-size: cover;
+    background-position: center;
+}
+
+.playerClass:hover {
+    cursor: pointer;
+}
+
+.playerValuesChange {
+    position: absolute;
+    font-weight: 700;
+    font-size: 28px;
+    width: 100%;
+    top: 30%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.playerChangeUp,
+.playerChangeDown {
+    transition-property: transform, opacity,scale;
+    transition-duration: 6s;
+    -webkit-text-stroke: 1px #070706;
+    opacity: 0;
+}
+
+.playerChangeUp {
+    color: rgb(6, 205, 6);
+    transform: translateY(-50px) scale(1.3);
+
+}
+
+.playerChangeUp::before {
+    content: "+";
+}
+
+.playerChangeDown {
+    color: rgb(197, 155, 150);
+    transform: translateY(-50px) scale(1.3);
+}
+
+.magicSpecialityLvl{
+    position: absolute;
+    font-size: 25px;
+    color: rgb(255, 209, 3);
+    font-weight: 700;
+    top: -3%;
+    right: 3%;
+}
+
+.player .playerClass:hover+.tooltip {
+    display: block;
+    z-index: 1;
+    border: 1px solid rgba(164, 167, 169, 0.6);
+    cursor: pointer;
+    left: 150px;
+    transform: translate(35px, -200px);
+}
+
+.enemy .playerClass:hover+.tooltip {
+    display: block;
+    z-index: 1;
+    border: 1px solid green;
+    cursor: pointer;
+    transform: translate(-330px, -200px);
+}

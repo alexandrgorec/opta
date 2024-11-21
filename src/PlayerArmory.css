@@ -1,0 +1,40 @@
+.playerArmory{
+    padding: 15px;
+    font-size:12px;
+    background-color: rgba(192, 214, 153, 0.591);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    column-gap: 25px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    user-select:none;
+    width: 185px;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.player{
+    float: left;
+}
+
+.enemy{
+    float: right;
+    
+}
+
+.chaosSpecialist{
+    background-color: rgba(238, 108, 9, 0.564);
+}
+
+.earthSpecialist{
+    background-color: rgba(16, 87, 2, 0.564);
+}
+
+.waterSpecialist{
+    background-color: rgba(9, 215, 238, 0.564);
+}
+
+.darkSpecialist{
+    background-color: rgba(90, 0, 174, 0.564);
+}

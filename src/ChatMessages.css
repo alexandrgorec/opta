@@ -1,12 +1,11 @@
 .chatMessages{
-    color: black;
-    background-color: rgba(143, 71, 71, 0.562);
-    font-size: 18px;
+    color: rgb(233, 233, 233);
+    background-color: rgba(182, 178, 178, 0.125);
+    font-size: 15px;
     font-family: "Times New Roman", monospace;
     width:300px;
-    height:250px;
+    height:175px;
     border: 3px solid black;
-    overflow:scroll;
     margin:10px;
     margin-bottom:0;
     padding-bottom:0;
@@ -20,10 +19,16 @@
     line-height: 1.15;
     }
     
-.leftMessage{
+.leftMessage,.systemMessage{
     text-align:left;
     }
   
 .rightMessage{
     text-align:right;
     }
+
+.systemMessage{
+    color: rgb(0, 247, 255);
+    font-style: italic;
+    font-weight: 700;
+}
