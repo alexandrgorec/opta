@@ -5,6 +5,7 @@ import Tooltip from "./Tooltip";
 
 function Player({ magicSpeciality, magicSpecialityLvl, health, armor, healthChange, armorChange, imgServer, }) {
     const card = {};
+    const coefficientMultiplier = 0.25;
     card.id = magicSpeciality + "Specialist";
     switch (magicSpeciality) {
         case "none":
@@ -14,19 +15,19 @@ function Player({ magicSpeciality, magicSpecialityLvl, health, armor, healthChan
             break;
         case "chaos":
             card.name = `Специалист магии хаоса \n${magicSpecialityLvl} уровня`;
-            card.description = `Эффективность и стоимость улучшаемых карт магии хаоса увеличиваются на ${25 * magicSpecialityLvl}%`;
+            card.description = `Эффективность и стоимость улучшаемых карт магии хаоса увеличиваются на ${coefficientMultiplier * magicSpecialityLvl}%\n В вашей руке всегда есть 2 карты магии хаоса`;
             break;
         case "earth":
             card.name = `Специалист магии земли \n${magicSpecialityLvl} уровня`;
-            card.description = `Эффективность и стоимость улучшаемых карт магии земли увеличиваются на ${25 * magicSpecialityLvl}%`;
+            card.description = `Эффективность и стоимость улучшаемых карт магии земли увеличиваются на ${coefficientMultiplier * magicSpecialityLvl}%\n В вашей руке всегда есть 2 карты магии земли`;
             break;
         case "water":
             card.name = `Специалист магии воды \n${magicSpecialityLvl} уровня`;
-            card.description = `Эффективность и стоимость улучшаемых карт магии воды увеличиваются на ${25 * magicSpecialityLvl}%`;
+            card.description = `Эффективность и стоимость улучшаемых карт магии воды увеличиваются на ${coefficientMultiplier * magicSpecialityLvl}%\n В вашей руке всегда есть 2 карты магии воды`;
             break;
         case "dark":
             card.name = `Специалист магии тьмы \n${magicSpecialityLvl} уровня`;
-            card.description = `Эффективность и стоимость улучшаемых карт магии тьмы увеличиваются на ${25 * magicSpecialityLvl}%`;
+            card.description = `Эффективность и стоимость улучшаемых карт магии тьмы увеличиваются на ${coefficientMultiplier * magicSpecialityLvl}%\n В вашей руке всегда есть 2 карты магии тьмы`;
             break;
     }
     useEffect(() => {
